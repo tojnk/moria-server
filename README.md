@@ -5,7 +5,7 @@ The official dedicated servers only support Windows. But I like Docker. I like t
 Uses steamcmd to keep server updated on container startup.
 
 How to use this container
-- download MoriaServerConfig.ini, MoriaServerPermissions.txt and MoriaServerRules.txt from this repository.
+- download [MoriaServerConfig.ini](https://github.com/tojnk/moria-server/blob/main/config/MoriaServerConfig.ini), [MoriaServerPermissions.txt](https://github.com/tojnk/moria-server/blob/main/config/MoriaServerPermissions.txt) and [MoriaServerRules.txt](https://github.com/tojnk/moria-server/blob/main/config/MoriaServerRules.txt) from this repository.
 - set up container in docker, example shown below
 
 ## Docker cli example
@@ -22,7 +22,7 @@ docker run -d --name='moria-server' \
 'tojnk/moria-server'
 ```
 
-Known issues
+## Known issues
 - During testing I ran into an issue that caused the savegame to be corrupted after restarting. Maybe the server doesn't shutdown cleanly.
 
 
